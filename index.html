@@ -33,18 +33,19 @@
 
         <!-- Add item form -->
         <div class="flex items-center gap-4 mb-8">
-          <input type="text" class="flex-1 h-11 px-[18px] py-0 font-['Inter'] font-[400] text-gray-400 text-[16px] leading-[140%] border-2 border-gray-300 rounded-xl" placeholder="Adicione um novo item"
+          <input type="text" class="flex-1 h-11 px-[18px] py-0 font-['Inter'] font-[400] text-gray-400 text-[16px] leading-[140%] border-2 border-gray-300 rounded-xl newItem" placeholder="Adicione um novo item"
           />
           <button
-            class="h-11 px-4 bg-[#ca3884] hover:bg-[#b32e73] rounded-xl text-white font-['Inter'] font-[600] text-[16px] leading-[20px]"
+            id="enviarForm"
+            class="h-11 px-4 bg-[#ca3884] hover:bg-[#b32e73] rounded-xl text-white font-['Inter'] font-[600] text-[16px] leading-[20px] cursor-pointer form"
           >
             Adicionar item
           </button>
         </div>
 
         <!-- Shopping list -->
-        <div class="flex flex-col w-full items-start gap-3 mb-8">
-          <div class="flex items-center gap-3 px-3 py-2 w-full bg-white rounded-xl">
+        <ul class="flex flex-col w-full items-start gap-3 mb-8">
+          <li class="flex items-center gap-3 px-3 py-2 w-full bg-white rounded-xl estilo-item">
             <input type="checkbox" class="w-4 h-4 rounded-md border-gray-300" />
             <label class="flex-1 font-['Inter'] font-[500] text-gray-700 text-[16px] leading-[24px]">
               Pão de forma
@@ -52,9 +53,9 @@
             <button class="p-2 rounded-xl hover:bg-gray-100">
                 <img src="/assets/icon delete.png" alt="Delete" class="w-10 h-10" />
             </button>
-          </div>
+          </li>
 
-          <div class="flex items-center gap-3 px-3 py-2 w-full bg-white rounded-xl">
+          <li class="flex items-center gap-3 px-3 py-2 w-full bg-white rounded-xl">
             <input type="checkbox" class="w-4 h-4 rounded-md border-gray-300" />
             <label class="flex-1 font-['Inter'] font-[500] text-gray-700 text-[16px] leading-[24px]">
               Café preto
@@ -62,9 +63,9 @@
             <button class="p-2 rounded-xl hover:bg-gray-100">
                 <img src="/assets/icon delete.png" alt="Delete" class="w-10 h-10" />
             </button>
-          </div>
+          </li>
 
-          <div class="flex items-center gap-3 px-3 py-2 w-full bg-white rounded-xl">
+          <li class="flex items-center gap-3 px-3 py-2 w-full bg-white rounded-xl">
             <input type="checkbox" class="w-4 h-4 rounded-md border-gray-300" />
             <label class="flex-1 font-['Inter'] font-[500] text-gray-700 text-[16px] leading-[24px]">
               Suco de laranja
@@ -72,18 +73,18 @@
             <button class="p-2 rounded-xl hover:bg-gray-100">
                 <img src="/assets/icon delete.png" alt="Delete" class="w-10 h-10" />
             </button>
-          </div>
+          </li>
 
-          <div class="flex items-center gap-3 px-3 py-2 w-full bg-white rounded-xl">
+          <li class="flex items-center gap-3 px-3 py-2 w-full bg-white rounded-xl">
             <input type="checkbox" class="w-4 h-4 rounded-md border-gray-300" />
             <label class="flex-1 font-['Inter'] font-[500] text-gray-700 text-[16px] leading-[24px]">
               Bolacha
             </label>
             <button class="p-2 rounded-xl hover:bg-gray-100">
-              <img src="/assets/icon delete.png" alt="Delete" class="w-10 h-10" />
+              <img src="/assets/icon delete.png" alt="Delete" class="w-10 h-10"/>
             </button>
-          </div>
-        </div>
+          </li>
+        </ul>
 
         <!-- Alert -->
         <div class="flex items-center gap-2 p-3 bg-[#c93847] text-white rounded-xl alert">
